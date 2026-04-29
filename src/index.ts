@@ -5,6 +5,7 @@ export type { RouterAgentConfig, RouterAgentName, RouterAgents } from "./agents.
 export { mergeRouterAgents } from "./config-merge.js"
 export type { MergeResult } from "./config-merge.js"
 export { parseRouterOptions } from "./config.js"
+export { buildSystemInstruction } from "./instructions.js"
 export { routeTask } from "./routing-policy.js"
 export type { RoutingDecision, RoutingInput } from "./routing-policy.js"
 export type {
