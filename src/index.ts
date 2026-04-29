@@ -1,6 +1,8 @@
 import type { Plugin } from "@opencode-ai/plugin"
 
 export { parseRouterOptions } from "./config.js"
+export { routeTask } from "./routing-policy.js"
+export type { RoutingDecision, RoutingInput } from "./routing-policy.js"
 export type {
   BashPermission,
   LogLevel,
