@@ -57,19 +57,28 @@
 - 第一版不自动发现 provider/model 能力。
 - 第一版不覆盖用户已有同名 agents。
 
-## 本地开发安装
+## 安装
 
-在 OpenCode 配置中可以先使用本地包路径进行验证：
+```bash
+npm install github:Misswjy/superpowers-agent
+```
+
+安装后在 OpenCode 配置中启用：
 
 ```json
 {
   "plugin": [
-    ["file:/Users/xingzhan/Documents/superpowers-agent", {
+    ["superpowers-agent-router", {
       "tiers": {
         "fast": "provider/model-fast",
         "standard": "provider/model-standard",
         "reasoning": "provider/model-reasoning"
-      }
+      },
+      "permissions": {
+        "fastBash": "deny",
+        "reviewerBash": "ask"
+      },
+      "logLevel": "info"
     }]
   ]
 }
