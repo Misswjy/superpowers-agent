@@ -57,6 +57,24 @@
 - 第一版不自动发现 provider/model 能力。
 - 第一版不覆盖用户已有同名 agents。
 
+## 本地开发安装
+
+在 OpenCode 配置中可以先使用本地包路径进行验证：
+
+```json
+{
+  "plugin": [
+    ["file:/Users/xingzhan/Documents/superpowers-agent", {
+      "tiers": {
+        "fast": "provider/model-fast",
+        "standard": "provider/model-standard",
+        "reasoning": "provider/model-reasoning"
+      }
+    }]
+  ]
+}
+```
+
 ## 开发命令
 
 ```bash
